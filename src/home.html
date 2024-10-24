@@ -2,8 +2,103 @@
 <html lang="en">
 {{> head }}
 <body>
+	<div class="wrapper">
+		<section class="section-table">
+			<div class="shell shell--fluid">
+				<div class="section__bar">
+					<nav class="tabs__nav">
+						<ul>
+							<li class="is-current">
+								<a href="#" data-tab-target="active-volunteers">Active volunteers</a>
+							</li>
 
-	{{> footer }}
+							<li>
+								<a href="#" data-tab-target="archived-volunteers">Archived volunteers</a>
+							</li>
+
+							<li>
+								<a href="#" data-tab-target="training-volunteers">Training volunteers</a>
+							</li>
+						</ul>
+					</nav><!-- /.tabs__nav -->
+
+					<a href="#" class="btn">
+						<img src="assets/images/svg/plus.svg" alt="" width="16" height="16">
+
+						Add a volunteer
+					</a><!-- /.btn -->
+				</div><!-- /.section__bar -->
+
+				<div class="search section__search">
+					<form action="?" method="GET">
+						<input type="text">
+
+						<button type="submit">
+							<img src="assets/images/svg/search.svg" alt="" width="18" height="18">
+						</button>
+					</form>
+				</div><!-- /.search section__search -->
+
+				<div class="section__filters">
+					<div class="filters">
+						<div class="filters__aside">
+							<img src="assets/images/svg/filters.svg" alt="" width="24" height="24">
+
+							<strong>filter by status:</strong>
+						</div><!-- /.filters__aside -->
+
+						<div class="filters__content">
+							<ul class="list-filters">
+								<li>
+									<a href="#" class="filter filter--green">available</a>
+								</li>
+
+								<li>
+									<a href="#" class="filter filter--yellow">assigned</a>
+								</li>
+
+								<li>
+									<a href="#" class="filter pink">on holiday</a>
+								</li>
+
+								<li>
+									<a href="#" class="filter filter--dark">sick</a>
+								</li>
+							</ul><!-- /.list-filters -->
+						</div><!-- /.filters__content -->
+					</div><!-- /.filters -->
+
+					<div class="filters">
+						<div class="filters__aside">
+							<img src="assets/images/svg/filters.svg" alt="" width="24" height="24">
+
+							<strong>filter by Availability:</strong>
+						</div><!-- /.filters__aside -->
+
+						<div class="filters__content">
+							<div class="data-fields">
+								<div class="data-field">
+									<label for="from-date">From</label>
+
+									<input type="text" name="from-date" id="from-date" placeholder="Select date">
+								</div><!-- /.data-field -->
+
+								<div class="data-field">
+									<label for="to-date">To</label>
+
+									<input type="text" name="to-date" id="to-date" placeholder="Select date">
+								</div><!-- /.data-field -->
+
+								<a href="#" class="js-date-trigger date-trigger">
+									<img src="assets/images/svg/calendar.svg" alt="" width="18" height="20">
+								</a><!-- /.date-trigger js-date-trigger -->
+							</div><!-- /.data-fields -->
+						</div><!-- /.filters__content -->
+					</div><!-- /.filters -->
+				</div><!-- /.section__filters -->
+			</div><!-- /.shell shell--fluid -->
+		</section><!-- /.section-table -->
+	</div><!-- /.wrapper -->
 
 	{{> scripts }}
 </body>
